@@ -1,0 +1,18 @@
+spring:
+
+# dev datasource
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: C##oraclesql
+    password: Mysore12345
+    driver-class-name: oracle.jdbc.OracleDriver
+
+# dev jpa properties
+  jpa:
+    database-platform: org.hibernate.dialect.OracleDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format-sql: true
